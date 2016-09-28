@@ -1,10 +1,37 @@
+<!doctype html>
+<!--Matthew Hawkins Personal Website Landing Page-->
+<!--Built with Zurb's Foundation 5.5.2-->
+<!--http://foundation.zurb.com/-->
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>A grouped pure CSS parallax demo (with webkit overflow fix) by Keith Clark</title>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matthew A. Hawkins</title>
+    <link rel="stylesheet" type = "text/css" href="css/foundation.css" />
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="img/icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="img/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="img/icons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+  </head>
 <style>
 
   /* Parallax base styles
@@ -165,60 +192,72 @@
 
 <body>
 
+  <div class="panel">
+      <div class="row">
+        <div class="small-only-text-center medium-only-text-center small- large-6 columns">
+          <h1>Matthew A. Hawkins</h1>
+        </div>
+        <div class="small-12 large-6 large-right columns">
+          <ul class="button-group round large-text-right medium-text-center stack-for-small">
+            <li><a href="docs/Hawkins_Resume.pdf" target="_blank" class="button">Resume</a></li>
+            <li><a href="docs/Hawkins_Transcript_(Unofficial).pdf" target="_blank" class="button">Transcript</a></li>
+            <li><a href="portfolio.html" class="button">Full Portfolio</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
   <div class="demo__info">
-    Pure CSS parallax scroll demo #3 by Keith Clark. Please read the <a href="../">blog post</a> for more information.
+    <div class="row">
+      <div class="small-12 large-12 columns">
+        <hr/>
+        <h4>Contact Me</h4>
+        <div class="small-4 large-4 columns">
+          <a href="mailto:matthew.alexander.hawkins@gmail.com">Email</a>
+        </div>
+        <div class="small-4 large-4 columns">
+          <a href="https://www.linkedin.com/pub/matthew-hawkins/a5/682/b03" target="_blank">LinkedIn</a>
+        </div>
+        <div class="small-4 large-4 columns">
+          <a href="https://github.com/M-Hawkins" target="_blank">Github</a>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="parallax">
     <div id="group1" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
+          <img src="img/banner.png">
       </div>
     </div>
+
     <div id="group2" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
+        <div class="small-12 large-8 columns">
+        <h4>About Me</h4>
+        <p>
+            I am a fourth year student at Bucknell University pursuing a degree in Computer Engineering. 
+            I like to work close to the hardware side and have dabbled with firmware as a result. 
+            Therefore, I am interested in pursuing a career in the field of embedded systems engineering. 
+            My work experience with Arduino has resulted in related hobby projects and Raspberry Pi interfacing.
+            Additionally, the various forms of human-computer interaction fascinate me. 
+            I would love to help contribute to advances in this sector, 
+            and hopefully revolutionize the way people connect with their devices. 
+        </p>
+      </div>
       </div>
       <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer</div>
+        <div class="small-12 large-4 small-only-text-center medium-only-text-center columns">
+          <img src="img/mug.png">
+        </div>
       </div>
     </div>
+
     <div id="group3" class="parallax__group">
       <div class="parallax__layer parallax__layer--fore">
         <div class="title">Foreground Layer</div>
       </div>
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
-      </div>
-    </div>
-    <div id="group4" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
-      </div>
-      <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer</div>
-      </div>
-      <div class="parallax__layer parallax__layer--deep">
-        <div class="title">Deep Background Layer</div>
-      </div>
-    </div>
-    <div id="group5" class="parallax__group">
-      <div class="parallax__layer parallax__layer--fore">
-        <div class="title">Foreground Layer</div>
-      </div>
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
-      </div>
-    </div>
-    <div id="group6" class="parallax__group">
-      <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer</div>
-      </div>
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
-      </div>
-    </div>
-    <div id="group7" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
         <div class="title">Base Layer</div>
       </div>

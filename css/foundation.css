@@ -23,46 +23,8 @@ html {
    * Remove default margin.
    */
 
-   /*Old CSS*/
-/*body {
-  margin: 0; }*/
-
-  /*
-  Custom CSS used for parallax effect
-  */
-  body {
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
-    font-weight: 200;
-    font-size: 20px;
-  }
-
-  .parallax-background {
-    background-color: #0078A0;
-    height: 3000px;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-    background-size: cover;
-    position: fixed;
-    width: 100%;
-  }
-
-  .intro-text {
-    font-size: 50px;
-    color: #fff;
-    text-align: center;
-    margin-top: 15%;
-  }
-  .parallax-content {
-    max-width: 100%;
-    position: relative;
-    top: 500px;
-    padding: 50px;
-    font-size: 20px;
-    background-color: #fff;
-  }
-
+body {
+  margin: 0; }
 
 /* HTML5 display definitions
      ========================================================================== */
