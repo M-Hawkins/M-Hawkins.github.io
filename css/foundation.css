@@ -473,8 +473,8 @@ img {
 .pCenter {
   text-align: center;
   position: absolute;
-  left: 80%;
-  top: 80%;
+  left: 20%;
+  top: 20%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
