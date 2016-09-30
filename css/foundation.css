@@ -396,7 +396,7 @@ img {
 /* Parallax base styles
   --------------------------------------------- */
 
-.par {
+.parallax {
   height: 500px; /* fallback for older browsers */
   height: 100vh;
   overflow-x: hidden;
@@ -473,8 +473,8 @@ img {
 .pCenter {
   text-align: center;
   position: absolute;
-  left: 20%;
-  top: 20%;
+  left: 50%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
