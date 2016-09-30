@@ -459,6 +459,16 @@ img {
       width: 100%;
 }
 
+.pTop {
+      position: absolute;
+      z-index:100;
+      bottom: auto;
+      top: 1vh;
+      font-size:80%;
+      text-align:center;
+      width: 100%;
+}
+
 /* centre the content in the parallax layers */
 .pCenter {
   text-align: center;
