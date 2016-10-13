@@ -11,9 +11,9 @@ function parseRSS(url, container) {
 
       $.each(data.responseData.feed.entries, function(key, value){
         var thehtml = '<h3><a href="'+value.link+'" target="_blank">'+value.title+'</a></h3>';
-        var moreInfo = '<h4>Author:<pre> &#9&#9 </pre>'+value.author+
-                      '<br/>Category:<pre> &#9 </pre>'+value.categories+
-                      '<br/>Description:<pre> &#9 </pre>'+value.content+'</h4><br/>';
+        var moreInfo = '<h4><b>Author:</b> '+value.author+
+                      '<br/><b>Category:</b> '+value.categories+
+                      '<br/><b>Description:</b> '+value.content+'</h4><br/>';
         $(container).append(thehtml);
         $(container).append(moreInfo);
       });
