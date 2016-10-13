@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bucknell Events App</title>
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/parser.js"></script>
+  </head>
+
+  <body>
+    <div class="callout small primary">
+      <div class="row column text-center">
+        <h1>Bucknell Events</h1>
+        <h2 class="subheader">RSS Feed</h2>
+      </div>
+    </div>
+
+    <div class="row column text-justify">
+      <div id = "rss" class = "blog-post"></div>
+    </div>
+
+    <script type="text/javascript">
+      $(function(){
+          parseRSS('http://events.bucknell.edu/MasterCalendar/RSSFeeds.aspx?data=E6dodmaNJ5NKdXCNLg2VPkoebHXhKwz9srD%2fU6n8y7g%3d', '#rss');
+      });
+    </script>
+  </body>
+
+</html>
