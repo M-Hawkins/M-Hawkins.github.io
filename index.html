@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--Matthew Hawkins Personal Website Landing Page-->
-<!--Built with Zurb's Foundation 5.5.2-->
+<!--Built with Zurb's Foundation 6-->
 <!--http://foundation.zurb.com/-->
 
 <html class="no-js" lang="en">
@@ -9,7 +9,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matthew A. Hawkins</title>
-    <link rel="stylesheet" type = "text/css" href="css/foundation5.css" />
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/motion-ui.css">
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
 
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png" />
@@ -37,7 +40,7 @@
 
     <div class="callout">
       <div class="row">
-        <div class="small-only-text-center medium-only-text-center small- large-6 columns">
+        <div class="large-6 columns text-center">
           <h1>Matthew A. Hawkins</h1>
         </div>
         <div class="small-12 large-6 large-right columns">
@@ -56,6 +59,7 @@
       </div>
     </div>-->
 
+    <!--About Me Section-->
     <div class="row">
       <hr/>
       <div class="small-12 large-8 columns">
@@ -74,55 +78,71 @@
         <img src="img/mug.png">
       </div>
     </div>
-<!--Overlay description on thumbnails-->
+
+    <!--Portfolio Section-->
+    <hr/>
     <div class="row">
-      <hr/>
       <div class="large-12 columns">
         <h4>Portfolio Highlights</h4>
-        <ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4" data-clearing>
-          <li>
-            <a class="th" href="portfolio.html#HydroSense"><img src="img/hydrosensePCB.png"></a>
+        <div class="orbit" role="region" data-orbit data-use-m-u-i="false">
+          <ul class="orbit-container">
+            <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>◀</button>
+            <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>▶</button>
+          <li class="is-active orbit-slide">
+            <img src="img/hydrosensePCB.png">
           </li>
-          <li>
-            <a class="th" href="portfolio.html#Hawkeye"><img src="img/irSource.png"></a>
+          <li class="is-active orbit-slide">
+            <img src="img/irSource.png">
           </li>
-          <li>
-            <a class="th" href="portfolio.html#Sikorsky"><img src="img/mmFinal.png"></a>
+          <li class="is-active orbit-slide">
+            <img src="img/mmFinal.png">
           </li>
-          <li>
-            <a class="th" href="portfolio.html#Solar"><img src="img/solarPathfinder.png"></a>
+          <li class="is-active orbit-slide">
+            <img src="img/solarPathfinder.png">
           </li>
         </ul>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide</span><span class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide</span></button>
+          <button data-slide="3"><span class="show-for-sr">Fourth slide</span></button>
+        </nav>
       </div>
     </div>
 
+    <!--Contact Me Section-->
+    <hr/>
     <div class="row">
-      <div class="small-12 large-12 columns">
-        <hr/>
+      <div class="small-12 large-12 columns text-center">
         <h4>Contact Me</h4>
-        <div class="small-4 large-4 columns">
-          <a href="mailto:matthew.alexander.hawkins@gmail.com">Email</a>
-        </div>
-        <div class="small-4 large-4 columns">
-          <a href="https://www.linkedin.com/pub/matthew-hawkins/a5/682/b03" target="_blank">LinkedIn</a>
-        </div>
-        <div class="small-4 large-4 columns">
-          <a href="https://github.com/M-Hawkins" target="_blank">Github</a>
-        </div>
-      </div>
-    </div>
-
-    <footer class="row">
-      <div class="large-12 columns">
-        <hr/>
         <div class="row">
-          <div class="large-6 columns">
-            <p>Last Updated: September 25, 2016</p>
+          <div class="small-4 large-4 columns">
+            <a href="mailto:matthew.alexander.hawkins@gmail.com">Email</a>
+          </div>
+          <div class="small-4 large-4 columns">
+            <a href="https://www.linkedin.com/pub/matthew-hawkins/a5/682/b03" target="_blank">LinkedIn</a>
+          </div>
+          <div class="small-4 large-4 columns">
+            <a href="https://github.com/M-Hawkins" target="_blank">Github</a>
           </div>
         </div>
       </div>
+    </div>
+
+    <!--Footer-->
+    <hr/>
+    <footer class="row">
+      <div class="large-12 columns">
+        <p>Last Updated: November 22, 2016</p>
+      </div>
     </footer>
 
+    <!--Start JS-->
+    <script>
+      $(document).ready(function() {
+          $(document).foundation();
+      })
+    </script>
   </body>
 
 </html>

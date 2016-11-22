@@ -1,190 +1,53 @@
-<!doctype html>
-<!--Matthew Hawkins Personal Website Landing Page-->
-<!--Built with Zurb's Foundation 6.2.3-->
-<!--http://foundation.zurb.com/-->
-
 <html>
-
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matthew A. Hawkins</title>
-    <link rel="stylesheet" type = "text/css" href="css/foundation.css" />
-
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/icons/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="img/icons/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="img/icons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="img/icons/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="&nbsp;"/>
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <title>Orbit</title>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/motion-ui.css">
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
   </head>
-
-  <body>
-
-    <div class="pTop">
-      <div class="callout">
-        <div class="row align-middle">
-          <div class="small-12 large-6 columns">
-            <h1 class="text-center">Matthew A. Hawkins</h1>
-          </div>
-          <div class="small-12 large-6 large-right columns">
-            <div class="stacked-for-small small button-group">
-              <a href="docs/Hawkins_Resume.pdf" target="_blank" class="button">Resume</a>
-              <a href="docs/Hawkins_Transcript_(Unofficial).pdf" target="_blank" class="button">Transcript</a>
-              <a href="mailto:matthew.alexander.hawkins@gmail.com" class="button">Email</a>
-              <a href="https://www.linkedin.com/pub/matthew-hawkins/a5/682/b03" target="_blank" class="button">LinkedIn</a>
-              <a href="https://github.com/M-Hawkins" target="_blank" class="button">Github</a>
-            </div>
-          </div>
-        </div>
+<body>
+<h2 class="text-center">Orbit Example</h2>
+<div class="orbit" role="region" data-orbit data-use-m-u-i="false">
+  <ul class="orbit-container">
+   <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>◀</button>
+    <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>▶</button>
+    <li class="is-active orbit-slide">
+      <div>
+        <h3 class="text-center">This is your first slider</h3>
+        <p class="text-center">Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device. </p>
       </div>
-    </div>
-
-  <div class="parallax">
-    <div style="z-index:1;" class="pGroup">
-      <div class="pLayer pFore">
-        <div class="pCenter">
-          <div class="row align-center">
-            <div class="callout primary">
-              <h4>Welcome</h4>
-            </div>
-          </div>
-        </div>
+    </li>
+    <li class="orbit-slide">
+      <div>
+        <h3 class="text-center">This is your second slider</h3>
+        <p class="text-center">Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device. </p>
       </div>
-      <div class="pLayer pBase">
-          <img src="img/banners/landing.jpg">
+    </li>
+    <li class="orbit-slide">
+      <div>
+        <h3 class="text-center">This is your third slider</h3>
+        <p class="text-center">Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device. </p>
       </div>
-    </div>
-
-    <div style="z-index:3;" class="pGroup">
-      <div class="pLayer pFore">
-        <div class="pCenter">
-          <div class="row align-center">
-            <div class="callout primary">
-              <h4>About Me</h4>
-              <p>
-                  I am a fourth year student at Bucknell University pursuing a degree in Computer Engineering. 
-                  I like to work close to the hardware side and have dabbled with firmware as a result. 
-                  Therefore, I am interested in pursuing a career in the field of embedded systems engineering. 
-                  My work experience with Arduino has resulted in related hobby projects and Raspberry Pi interfacing.
-                  Additionally, the various forms of human-computer interaction fascinate me. 
-                  I would love to help contribute to advances in this sector, 
-                  and hopefully revolutionize the way people connect with their devices. 
-              </p>
-              <img src="img/mug.png">
-            </div>
-          </div>
-        </div>
+    </li>
+    <li class="orbit-slide">
+      <div>
+        <h3 class="text-center">This is your fourth slider</h3>
+        <p class="text-center">Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device. </p>
       </div>
-      <div class="pLayer pBase">
-        <img src="img/banners/code.jpg">
-      </div>
-    </div>
-
-    <div style="z-index:1;" class="pGroup">
-      <div class="pLayer pFore">
-        <div class="pCenter">
-          <div class="row align-center">
-            <div class="callout primary">
-              <h3>Sikorsky</h3>
-              <p>
-                  At <i>Sikorsky Aircraft</i>, a <i>Lockheed Martin</i> company, 
-                  I was tasked with updating the database used in their estimating department. 
-                  This involved decomposing a collection of Excel sheets into a relational model. 
-                  I then built an Access based solution from this model. 
-                  In order to future proof the system, I automated the system of polling an off-site database for up to date resources. 
-                  To improve the system's ease of use, I added a frontend to the program.
-                  This GUI also provided functionality which could automate various tasks which are common in the estimating process. 
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pLayer pBase">
-        <img src="img/banners/database.jpg">
-      </div>
-    </div>
-
-    <div style="z-index:3;" class="pGroup">
-        <div class="pLayer pFore">
-          <div class="pCenter">
-            <div class="row align-center">
-              <div class="callout primary">
-                <h3>HydroSense</h3>
-                <p>
-                    <a href="https://www.eg.bucknell.edu/~amm042/hydrosense/about-the-project/" target="_blank">HydroSense</a> 
-                    provides a communication protocol and back-end server infrastructure 
-                    to enable any Arduino or Raspberry Pi to easily collect and publish hydroclimatic data. 
-                    This data can then be queried, compared, and downloaded by researchers and hobbyists alike. <br>
-                    Keep up to date on the project with our <a href="https://github.com/HydroSense" target="_blank">Github</a> page.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pLayer pBase">
-          <img src="img/hydrosenseBlock.jpg">
-        </div>
-      </div>
-
-    <div style="z-index:1;" class="pGroup">
-      <div class="pLayer pFore">
-        <div class="pCenter">
-          <div class="row align-center">
-            <div class="callout primary">
-              <h3>Hawkeye</h3>
-              <p>
-                  At <i>Hawkeye Technologies</i>, I worked in the assembly and testing of infrared sources and heating elements. 
-                  This involved tasks such as coil winding, spot welding, and cement casting. 
-                  Occasionally I would have to machine headers and ceramics. 
-                  Afterwards, I would perform bulk data collection on the newly finished batch and analyze it for any inconsistencies. <br>
-                  In my last year at Hawkeye, I was tasked with creating datasheets for the entire product catalog. 
-                  As the company had recently undergone a change in management, I would also be utilizing the new branding. 
-                  This including prepping the new website and updating schematics from old CAD files.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pLayer pBase">
-        <img src="img/irSource.png">
-      </div>
-    </div>
-
-    <div style="z-index:3;" class="pGroup">
-      <div class="pLayer pFore">
-        <div class="pCenter">
-          <div class="row align-center">
-            <div class="callout primary">
-              <h3>Solar</h3>
-              <p>
-                  As part of the Institute for Leadership in Sustainable Technology, 
-                  I worked closely with Steve Hazel of the Renewable Energy Alliance to develop and implement residential photo-voltaic systems. 
-                  This included every step of the process, 
-                  ranging from solar window analysis and site feasibility assessment up to system design and wiring.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pLayer pBase">
-        <img src="img/solarPathfinder.png">
-      </div>
-    </div>
-
-  </body>
+    </li>
+  </ul>
+  <nav class="orbit-bullets">
+   <button class="is-active" data-slide="0"><span class="show-for-sr">First slide</span><span class="show-for-sr">Current Slide</span></button>
+   <button data-slide="1"><span class="show-for-sr">Second slide</span></button>
+   <button data-slide="2"><span class="show-for-sr">Third slide</span></button>
+   <button data-slide="3"><span class="show-for-sr">Fourth slide</span></button>
+ </nav>
+</div>
+<script>
+   $(document).ready(function() {
+      $(document).foundation();
+   })
+</script>
+</body>
 </html>
