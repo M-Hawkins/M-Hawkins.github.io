@@ -107,3 +107,8 @@ ul, ol, dl {
 #portfolio h4{
     margin-bottom: 30px;
 }
+
+#portfolio img, #about img{
+    display: block;
+    margin: 0 auto;
+}
