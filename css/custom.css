@@ -1,5 +1,5 @@
 .jumbo{
-    background-image: url(../img/jumbo_bg.jpg);
+    background-image: url(../img/bannerCrop.png);
     background-size: cover;
     background-attachment: fixed;
     padding: 175px 0;
@@ -87,7 +87,7 @@ ul, ol, dl {
     border: none;
 }
 #portfolio{
-    background-image: url(../img/port_bg.jpg);
+    background-image: url(../img/databaseCrop.png);
     background-size: cover;
     background-attachment: fixed;
         
