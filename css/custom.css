@@ -12,6 +12,13 @@
     margin-bottom: 15px;
 }
 
+/* temporary flickity styling*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .contain-to-grid, .top-bar{
     background: #eaeaea;
 }
