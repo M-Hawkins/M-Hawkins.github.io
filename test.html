@@ -1,192 +1,201 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--Matthew Hawkins Personal Website Landing Page-->
-<!--Built with Zurb's Foundation 5-->
+<!--Built with Zurb's Foundation 6-->
 <!--http://foundation.zurb.com/-->
 
-<html class="no-js" lang="en">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Matthew A. Hawkins Portfolio</title>
-        <link rel="stylesheet" href="css/foundation5.css" />
-        <link rel="stylesheet" href="css/custom.css" />
-        <!--<link rel="stylesheet" href="foundation-icons/foundation-icons.css" />-->
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <script src="js/vendor/f5/modernizr.js"></script>
+        <title>Matthew A. Hawkins</title>
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/motion-ui.css"> 
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
     </head>
 
     <body>
-        <div id="top"></div>
-        <div class="contain-to-grid sticky">
-            <nav class="top-bar" data-topbar>
-                <ul class="title-area">
-                    <li class="name">
-                        <h1>
-                            <a href="#">Matthew Hawkins</a>
-                        </h1>
-                    </li>
-                    <!-- Remove the class "menu-icon" to get rid of menu icon. -->
-                    <li class="toggle-topbar menu-icon">
-                        <a href="#">
-                            <span>Quick Links</span>
-                        </a>
-                    </li>
-                </ul>
-                <section class="top-bar-section">
-                    <!-- Right Nav Section -->
-                    <ul id="nav" class="right">
-                        <li>
-                            <a href="docs/Hawkins_Resume_12_28_16.pdf" target="_blank">Resume</a>
-                        </li>
-
-                        <li>
-                            <a href="docs/Hawkins_Transcript_12_28_16.pdf" target="_blank">Transcript</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/M-Hawkins" target="_blank">Github</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact Me</a>
-                        </li>
-                    </ul>
-                </section>
-            </nav>
+        <!--Top Bar Section-->
+        <div data-sticky-container>
+            <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%" data-responsive-toggle="topMenu" data-hide-for="medium">
+                <div class="title-bar-title">Matthew A. Hawkins</div>
+                <div class="title-bar-right">Quick Links</div>
+                <button class="menu-icon" type="button" data-toggle="topMenu"></button>
+            </div>
         </div>
 
-        <section class="jumbo">
-            <div class="row">
-                <div class="large-12 columns">
-                    <h1>Welcome</h1>
-                    <!--<p class="text-center">
-                        <a href="http://epickwebdesign.com" class="medium button">Simple Button</a>
-                    </p>-->
+        <!--Header Section-->
+        <div class="callout" id="topMenu" data-animate="hinge-in-from-top spin-out">
+            <div class="row align-middle">
+                <div class="large-6 columns text-center show-for-medium">
+                    <h1>Matthew A. Hawkins</h1>
+                </div>
+                <div class="small-12 large-6 large-right columns" data-dropdown-menu>
+                    <div class="stacked-for-small button-group">
+                        <a class="button" href="docs/Hawkins_Resume_12_28_16.pdf" target="_blank">Resume</a>
+                        <a class="button" href="docs/Hawkins_Transcript_12_28_16.pdf" target="_blank">Transcript</a>
+                        <a class="button" href="https://github.com/M-Hawkins" target="_blank">Github</a>
+                        <a class="button" href="#contact">Contact Me</a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="about">
-            <div class="row">
-                <div class="text-center small-12 medium-8 large-8 columns">
-                    <h2>About Me</h2>
-                    <div class="text-justify">
-                        <p>
-                            I am a fourth year student at Bucknell University pursuing a degree in Computer Engineering. 
-                            I like to work close to the hardware side and have dabbled with firmware as a result. 
-                            Therefore, I am interested in pursuing a career in the field of embedded systems engineering. 
-                            My work experience with Arduino has resulted in related hobby projects and Raspberry Pi interfacing.
-                            Additionally, the various forms of human-computer interaction fascinate me. 
-                            I would love to help contribute to advances in this sector, 
-                            and hopefully revolutionize the way people connect with their devices. 
-                        </p>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-4 columns">
-                    <img class="th" src="img/mug.png" alt="Portrait">
-                </div>
+        <!--Landing Banner Section-->
+        <div class="row">
+            <div class="small-12 large-12 columns">
+                <img src="img/bannerCrop.png">
             </div>
-        </section>
-        <section id="portfolio">
-            <div class="row">
-                <div class="large-12 columns">
-                    <h2>Portfolio Highlights</h2>
-                    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": 5000 }'>
-                        <div class="gallery-cell">
-                            <img src="img/hydrosensePCBCrop.png" alt="Hydrosense">
-                            <!--<p>
-                                <a href="https://www.eg.bucknell.edu/~amm042/hydrosense/about-the-project/" target="_blank">HydroSense</a> 
-                                provides a communication protocol and back-end server infrastructure 
-                                to enable any Arduino or Raspberry Pi to easily collect and publish hydroclimatic data. 
-                                This data can then be queried, compared, and downloaded by researchers and hobbyists alike. <br>
-                                Keep up to date on the project with our <a href="https://github.com/HydroSense" target="_blank">Github</a> page.
-                            </p>-->
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="img/irSourceCrop.png" alt="HawkEye">
-                            <!--<p>
-                                At Hawkeye Technologies, I worked in the assembly and testing of infrared sources and heating elements. 
-                                This involved tasks such as coil winding, spot welding, and cement casting. 
-                                Occasionally I would have to machine headers and ceramics. 
-                                Afterwards, I would perform bulk data collection on the newly finished batch and analyze it for any inconsistencies. <br>
-                                In my last year at Hawkeye, I was tasked with creating datasheets for the entire product catalog. 
-                                As the company had recently undergone a change in management, I would also be utilizing the new branding. 
-                                This including prepping the new website and updating schematics from old CAD files.
-                            </p>-->
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="img/databaseCrop.png" alt="Sikorsky">
-                            <!--<p>
-                                At Sikorsky Aircraft, a Lockheed Martin company, 
-                                I was tasked with updating the database used in their estimating department. 
-                                This involved decomposing a collection of Excel sheets into a relational model. 
-                                I then built an Access based solution from this model. 
-                                In order to future proof the system, I automated the system of polling an off-site database for up to date resources. 
-                                To improve the system's ease of use, I added a frontend to the program.
-                                This GUI also provided functionality which could automate various tasks which are common in the estimating process. 
-                            </p>-->
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="img/solarPathfinderCrop.png" alt="Solar">
-                            <!--<p>
-                                As part of the Institute for Leadership in Sustainable Technology, 
-                                I worked closely with Steve Hazel of the Renewable Energy Alliance to develop and implement residential photo-voltaic systems. 
-                                This included every step of the process, 
-                                ranging from solar window analysis and site feasibility assessment up to system design and wiring.
-                            </p>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
 
-        <footer>
-            <div id="contact">
+        <!--About Me Section-->
+        <hr/>
+        <div class="row align-center">
+            <div class="small-12 medium-8 large-8 columns">
+                <h4>About Me</h4>
+                <p>
+                    I am a fourth year student at Bucknell University pursuing a degree in Computer Engineering. 
+                    I like to work close to the hardware side and have dabbled with firmware as a result. 
+                    Therefore, I am interested in pursuing a career in the field of embedded systems engineering. 
+                    My work experience with Arduino has resulted in related hobby projects and Raspberry Pi interfacing.
+                    Additionally, the various forms of human-computer interaction fascinate me. 
+                    I would love to help contribute to advances in this sector, 
+                    and hopefully revolutionize the way people connect with their devices. 
+                </p>
+            </div>
+            <div class="small-12 medium-4 large-4 columns">
+                <img class="thumbnail" src="img/mug.png" alt="Portrait">
+            </div>
+        </div>
+
+        <!--Portfolio Section-->
+        <hr/>
+        <div class="row align-center">
+            <h4>Portfolio</h4>
+        </div>
+        <div class="row">
+            <ul id="og-grid" class="og-grid">
+                <li>
+                    <a  class="thumbnail"
+                        data-largesrc="img/hydrosensePCB.png"
+                        data-title="Hydrosense"
+                        data-description="Hydrosense provides a communication 
+                        protocol and back-end server infrastructure to enable 
+                        any Arduino or Raspberry Pi to easily collect and 
+                        publish hydroclimatic data. 
+                        This data can then be queried, compared, and downloaded 
+                        by researchers and hobbyists alike.">
+                        <img src="img/thumbs/hydrosensePCBThumb.png" alt="Hydrosense"/>
+                    </a>
+                </li>
+                <li>
+                    <a  class="thumbnail"
+                        data-largesrc="img/database.jpg"
+                        data-title="Sikorsky (Lockheed Martin)"
+                        data-description="At Sikorsky Aircraft, a Lockheed 
+                        Martin company, I was tasked with updating the database 
+                        used in their estimating department. This involved 
+                        decomposing a collection of Excel sheets into a 
+                        relational model. I then built an Access based solution 
+                        from this model. In order to future proof the system, I 
+                        automated the system of polling an off-site database 
+                        for up to date resources. To improve the system's ease 
+                        of use, I added a frontend to the program. This GUI 
+                        also provided functionality which could automate 
+                        various tasks which are common in the estimating 
+                        process. ">
+                        <img src="img/thumbs/databaseThumb.png" alt="Sikorsky"/>
+                    </a>
+                </li>
+                <li>
+                    <a  class="thumbnail"
+                        data-largesrc="img/solarPathfinderCrop.png"
+                        data-title=" Accessible Micromanipulator"
+                        data-description="">
+                        <img src="img/thumbs/solarPathfinderThumb.png" alt="Micromanipulator"/>
+                    </a>
+                </li>
+                <li>
+                    <a  class="thumbnail"
+                        data-largesrc="img/solarPathfinderCrop.png"
+                        data-title="Bucknell Events App"
+                        data-description="">
+                        <img src="img/thumbs/solarPathfinderThumb.png" alt="Events"/>
+                    </a>
+                </li>
+                <li>
+                    <a  class="thumbnail"
+                        data-largesrc="img/irSource.png"
+                        data-title="Hawkeye Technologies"
+                        data-description="At Hawkeye Technologies, I worked in 
+                        the assembly and testing of infrared sources and 
+                        heating elements. This involved tasks such as coil 
+                        winding, spot welding, and cement casting. 
+                        Occasionally I would have to machine headers and 
+                        ceramics. Afterwards, I would perform bulk data 
+                        collection on the newly finished batch and analyze it for any inconsistencies. <br> In my last year at Hawkeye, 
+                        I was tasked with creating datasheets for the entire 
+                        product catalog. As the company had recently undergone 
+                        a change in management, I would also be utilizing the 
+                        new branding. This including prepping the new website 
+                        and updating schematics from old CAD files.">
+                        <img src="img/thumbs/irSourceThumb.png" alt="Hawkeye Technologies"/>
+                    </a>
+                </li>
+                <li>
+                    <a  class="thumbnail"
+                        data-largesrc="img/solarPathfinderCrop.png"
+                        data-title="Solar"
+                        data-description="As part of the Institute for 
+                        Leadership in Sustainable Technology, I worked closely 
+                        with Steve Hazel of the Renewable Energy Alliance to 
+                        develop and implement residential photo-voltaic 
+                        systems. This included every step of the process, 
+                        ranging from solar window analysis and site 
+                        feasibility assessment up to system design and wiring.">
+                        <img src="img/thumbs/solarPathfinderThumb.png" alt="Solar"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Contact Me Section-->
+        <hr/>
+        <div class="row">
+            <div class="small-12 large-12 columns text-center" id="contact">
+                <h4>Contact Me</h4>
                 <div class="row">
-                    <div class="small-12 large-12 columns text-center">
-                        <h2>Contact Me</h2>
-                        <div class="row">
-                            <div class="small-4 large-4 columns">
-                                <a href="mailto:matthew.alexander.hawkins@gmail.com">Email</a>
-                            </div>
-                            <div class="small-4 large-4 columns">
-                                <a href="https://www.linkedin.com/pub/matthew-hawkins/a5/682/b03" target="_blank">LinkedIn</a>
-                            </div>
-                            <div class="small-4 large-4 columns">
-                                <a href="https://bucknell-csm.symplicity.com/profiles/matthew.hawkins" target="_blank">Bucknell Bridge</a>
-                            </div>
-                        </div>
+                    <div class="small-4 large-4 columns">
+                        <a href="mailto:matthew.alexander.hawkins@gmail.com">Email</a>
+                    </div>
+                    <div class="small-4 large-4 columns">
+                        <a href="https://www.linkedin.com/pub/matthew-hawkins/a5/682/b03" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="small-4 large-4 columns">
+                        <a href="https://bucknell-csm.symplicity.com/profiles/matthew.hawkins" target="_blank">Bucknell Bridge</a>
                     </div>
                 </div>
             </div>
-            <div class="upd">
-                <div class="row">
-                    <div class="large-12 columns">
-                        <p>Last Updated: December 29, 2016 </p>
-                    </div>
-                </div>
+        </div>
+
+        <!--Footer-->
+        <hr/>
+        <footer class="row">
+            <div class="large-12 columns">
+                <p>Last Updated: February 8, 2017</p>
             </div>
         </footer>
 
-        <script src="js/vendor/f5/jquery.js"></script>
-        <script src="js/foundation5.min.js"></script>
-        <script>
-            $(document).foundation();
-        </script>
+        <!--Start JS-->
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/foundation.min.js"></script>
+        <script src="js/vendor/motion-ui.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/grid.js"></script>
         <script>
             $(function() {
-                $('a[href*=#]:not([href=#])').click(function() {
-                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        if (target.length) {
-                            $('html,body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000);
-                            return false;
-                        }
-                    }
-                });
+                Grid.init();
             });
         </script>
+        <script>$(document).foundation();</script>
     </body>
 </html>
