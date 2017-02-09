@@ -38,9 +38,10 @@
 .og-expander {
 	position: absolute;
 	background: #e6f3ff;
+	border: 2px solid lightseagreen;
 	top: auto;
-	left: 0;
-	width: 100%;
+	left: 25%;
+	width: 50%;
 	margin-top: 10px;
 	text-align: left;
 	height: 0;
