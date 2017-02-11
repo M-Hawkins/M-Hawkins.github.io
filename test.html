@@ -14,6 +14,7 @@
 
     <body>
         <!--Header Section-->
+
         <div class="row align-middle">
             <div class="large-6 column text-center">
                 <h1>Matthew A. Hawkins</h1>
@@ -63,71 +64,124 @@
         <div class="row align-center">
             <h4>Portfolio</h4>
         </div>
-        <div class="row align-center">
-            <ul class="tabs" data-tabs id="port">
-                <li class="tabs-title">
-                    <a href=#Hydrosense>
-                        <img src="img/thumbs/hydrosensePCBThumb.png"
-                        alt="Hydrosense">
-                    </a>
-                </li>
-                <li class="tabs-title">
-                    <a href=#Sikorsky>
-                        <img src="img/thumbs/databaseThumb.png"
-                        alt="Sikorsky (Lockheed Martin)">
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="tabs-content" data-tabs-content="port">
-            <div class="tabs-panel" id="Hydrosense">
-                <p>
-                    <a href="https://www.eg.bucknell.edu/~amm042/hydrosense/">
-                    Hydrosense</a> provides a communication 
-                    protocol and back-end server infrastructure to enable 
-                    any Arduino or Raspberry Pi to easily collect and 
-                    publish hydroclimatic data. 
-                    This data can then be queried, compared, and downloaded 
-                    by researchers and hobbyists alike. 
-                    See what's new on our 
-                    <a href="https://github.com/HydroSense">Github</a> repo!
-                </p>
+        <div class="row small-up-1 medium-up-2">
+            <div class="column">
+                <ul class="accordion" data-accordion="accGroup" data-allow-all-closed="true">
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">
+                            <img src="img/hydrosensePCBCrop.png"
+                            alt="Hydrosense"
+                            style="width:95%; text-align:center">
+                        </a>
+                        <div class="accordion-content" data-tab-content>
+                            <a href="https://www.eg.bucknell.edu/~amm042/hydrosense/">
+                            Hydrosense</a> provides a communication 
+                            protocol and back-end server infrastructure to enable 
+                            any Arduino or Raspberry Pi to easily collect and 
+                            publish hydroclimatic data. 
+                            This data can then be queried, compared, and downloaded 
+                            by researchers and hobbyists alike. 
+                            See what's new on our 
+                            <a href="https://github.com/HydroSense">Github</a> repo!
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">
+                            <img src="img/databaseCrop.png"
+                            alt="Sikorsky (Lockheed Martin)"
+                            style="width:95%; text-align:center">
+                        </a>
+                        <div class="accordion-content" data-tab-content>
+                            At Sikorsky Aircraft, a Lockheed 
+                            Martin company, I was tasked with updating the database 
+                            used in their estimating department. This involved 
+                            decomposing a collection of Excel sheets into a 
+                            relational model. I then built an Access based solution 
+                            from this model. In order to future proof the system, I 
+                            automated the system of polling an off-site database 
+                            for up to date resources. To improve the system's ease 
+                            of use, I added a frontend to the program. This GUI 
+                            also provided functionality which could automate 
+                            various tasks which are common in the estimating 
+                            process. 
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">
+                            <img src="img/hydrosensePCBCrop.png"
+                            alt="Accessible Micromanipulator"
+                            style="width:95%; text-align:center">
+                        </a>
+                        <div class="accordion-content" data-tab-content>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="tabs-panel" id="Sikorsky">
-                <p>
-                    At Sikorsky Aircraft, a Lockheed 
-                    Martin company, I was tasked with updating the database 
-                    used in their estimating department. This involved 
-                    decomposing a collection of Excel sheets into a 
-                    relational model. I then built an Access based solution 
-                    from this model. In order to future proof the system, I 
-                    automated the system of polling an off-site database 
-                    for up to date resources. To improve the system's ease 
-                    of use, I added a frontend to the program. This GUI 
-                    also provided functionality which could automate 
-                    various tasks which are common in the estimating 
-                    process. 
-                </p>
+            <div class="column">
+                <ul class="accordion" data-accordion="accGroup" data-allow-all-closed="true">
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">
+                            <img src="img/hydrosensePCBCrop.png"
+                            alt="Bucknell Events App"
+                            style="width:95%; text-align:center">
+                        </a>
+                        <div class="accordion-content" data-tab-content>
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">
+                            <img src="img/irSourceCrop.png"
+                            alt="Hawkeye Technologies"
+                            style="width:95%; text-align:center">
+                        </a>
+                        <div class="accordion-content" data-tab-content>
+                            At Hawkeye Technologies, I worked in 
+                            the assembly and testing of infrared sources and 
+                            heating elements. This involved tasks such as coil 
+                            winding, spot welding, and cement casting. 
+                            Occasionally I would have to machine headers and 
+                            ceramics. Afterwards, I would perform bulk data 
+                            collection on the newly finished batch and analyze it for any inconsistencies. <br> In my last year at Hawkeye, 
+                            I was tasked with creating datasheets for the entire 
+                            product catalog. As the company had recently undergone 
+                            a change in management, I would also be utilizing the 
+                            new branding. This including prepping the new website 
+                            and updating schematics from old CAD files.
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">
+                            <img src="img/solarPathfinder.png"
+                            alt="Solar"
+                            style="width:95%; text-align:center">
+                        </a>
+                        <div class="accordion-content" data-tab-content>
+                            As part of the Institute for 
+                            Leadership in Sustainable Technology, I worked closely 
+                            with Steve Hazel of the Renewable Energy Alliance to 
+                            develop and implement residential photo-voltaic 
+                            systems. This included every step of the process, 
+                            ranging from solar window analysis and site 
+                            feasibility assessment up to system design and wiring.">
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-
-
-
 
         <!--Contact Me Section-->
         <hr/>
         <div class="row">
-            <div class="small-12 large-12 columns text-center" id="contact">
+            <div class="small-12 column text-center" id="contact">
                 <h4>Contact Me</h4>
                 <div class="row">
-                    <div class="small-4 large-4 columns">
+                    <div class="small-4 column">
                         <a href="mailto:matthew.alexander.hawkins@gmail.com">Email</a>
                     </div>
-                    <div class="small-4 large-4 columns">
+                    <div class="small-4 column">
                         <a href="https://www.linkedin.com/pub/matthew-hawkins/a5/682/b03" target="_blank">LinkedIn</a>
                     </div>
-                    <div class="small-4 large-4 columns">
+                    <div class="small-4 column">
                         <a href="https://bucknell-csm.symplicity.com/profiles/matthew.hawkins" target="_blank">Bucknell Bridge</a>
                     </div>
                 </div>
@@ -137,7 +191,7 @@
         <!--Footer-->
         <hr/>
         <footer class="row">
-            <div class="large-12 columns">
+            <div class="large-12 column">
                 <p>Last Updated: February 8, 2017</p>
             </div>
         </footer>
