@@ -68,29 +68,35 @@
 
         <!--Portfolio Section-->
         <hr/>
-        <!--<div class="row align-center">
+        <div class="row align-center">
             <h4>Portfolio</h4>
         </div>
-        <div class="row">
-            <ul id="og-grid" class="og-grid">
-                <li>
-                    <a  class="thumbnail"
-                        data-largesrc="img/hydrosensePCB.png"
-                        data-title="Hydrosense"
-                        data-description="Hydrosense provides a communication 
+        <div class="row align-center">
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">
+                        <img src="img/thumbs/hydrosensePCBThumb.png"
+                        alt="Hydrosense">
+                    </a>
+                    <div class="accordion-content" data-tab-content>
+                        <a href="https://www.eg.bucknell.edu/~amm042/hydrosense/">
+                        Hydrosense</a> provides a communication 
                         protocol and back-end server infrastructure to enable 
                         any Arduino or Raspberry Pi to easily collect and 
                         publish hydroclimatic data. 
                         This data can then be queried, compared, and downloaded 
-                        by researchers and hobbyists alike.">
-                        <img src="img/thumbs/hydrosensePCBThumb.png" alt="Hydrosense"/>
-                    </a>
+                        by researchers and hobbyists alike. 
+                        See what's new on our 
+                        <a href="https://github.com/HydroSense">Github</a> repo!
+                    </div>
                 </li>
-                <li>
-                    <a  class="thumbnail"
-                        data-largesrc="img/database.jpg"
-                        data-title="Sikorsky (Lockheed Martin)"
-                        data-description="At Sikorsky Aircraft, a Lockheed 
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">
+                        <img src="img/thumbs/databaseThumb.png"
+                        alt="Sikorsky (Lockheed Martin)">
+                    </a>
+                    <div class="accordion-content" data-tab-content>
+                        At Sikorsky Aircraft, a Lockheed 
                         Martin company, I was tasked with updating the database 
                         used in their estimating department. This involved 
                         decomposing a collection of Excel sheets into a 
@@ -101,31 +107,32 @@
                         of use, I added a frontend to the program. This GUI 
                         also provided functionality which could automate 
                         various tasks which are common in the estimating 
-                        process. ">
-                        <img src="img/thumbs/databaseThumb.png" alt="Sikorsky"/>
-                    </a>
+                        process. 
+                    </div>
                 </li>
-                <li>
-                    <a  class="thumbnail"
-                        data-largesrc="img/solarPathfinderCrop.png"
-                        data-title=" Accessible Micromanipulator"
-                        data-description="">
-                        <img src="img/thumbs/solarPathfinderThumb.png" alt="Micromanipulator"/>
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">
+                        <img src="img/thumbs/hydrosensePCBThumb.png"
+                        alt="Accessible Micromanipulator">
                     </a>
+                    <div class="accordion-content" data-tab-content>
+                    </div>
                 </li>
-                <li>
-                    <a  class="thumbnail"
-                        data-largesrc="img/solarPathfinderCrop.png"
-                        data-title="Bucknell Events App"
-                        data-description="">
-                        <img src="img/thumbs/solarPathfinderThumb.png" alt="Events"/>
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">
+                        <img src="img/thumbs/hydrosensePCBThumb.png"
+                        alt="Bucknell Events App">
                     </a>
+                    <div class="accordion-content" data-tab-content>
+                    </div>
                 </li>
-                <li>
-                    <a  class="thumbnail"
-                        data-largesrc="img/irSource.png"
-                        data-title="Hawkeye Technologies"
-                        data-description="At Hawkeye Technologies, I worked in 
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">
+                        <img src="img/thumbs/irSourceThumb.png"
+                        alt="Hawkeye Technologies">
+                    </a>
+                    <div class="accordion-content" data-tab-content>
+                        At Hawkeye Technologies, I worked in 
                         the assembly and testing of infrared sources and 
                         heating elements. This involved tasks such as coil 
                         winding, spot welding, and cement casting. 
@@ -136,26 +143,26 @@
                         product catalog. As the company had recently undergone 
                         a change in management, I would also be utilizing the 
                         new branding. This including prepping the new website 
-                        and updating schematics from old CAD files.">
-                        <img src="img/thumbs/irSourceThumb.png" alt="Hawkeye Technologies"/>
-                    </a>
+                        and updating schematics from old CAD files.
+                    </div>
                 </li>
-                <li>
-                    <a  class="thumbnail"
-                        data-largesrc="img/solarPathfinderCrop.png"
-                        data-title="Solar"
-                        data-description="As part of the Institute for 
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">
+                        <img src="img/thumbs/solarPathfinderThumb.png"
+                        alt="Solar">
+                    </a>
+                    <div class="accordion-content" data-tab-content>
+                        As part of the Institute for 
                         Leadership in Sustainable Technology, I worked closely 
                         with Steve Hazel of the Renewable Energy Alliance to 
                         develop and implement residential photo-voltaic 
                         systems. This included every step of the process, 
                         ranging from solar window analysis and site 
                         feasibility assessment up to system design and wiring.">
-                        <img src="img/thumbs/solarPathfinderThumb.png" alt="Solar"/>
-                    </a>
+                    </div>
                 </li>
             </ul>
-        </div>-->
+        </div>
 
         <!--Contact Me Section-->
         <hr/>
@@ -188,13 +195,6 @@
         <script src="js/vendor/jquery.js"></script>
         <script src="js/vendor/foundation.min.js"></script>
         <script src="js/vendor/motion-ui.js"></script>
-        <script src="js/modernizr.custom.js"></script>
-        <script src="js/grid.js"></script>
-        <script>
-            $(function() {
-                Grid.init();
-            });
-        </script>
         <script>$(document).foundation();</script>
     </body>
 </html>
