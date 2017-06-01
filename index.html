@@ -21,11 +21,11 @@
 			<button class="menu-icon" type="button" data-toggle="menu-buttons"></button>
 			<div class="title-bar-title">Matthew A. Hawkins</div>
 		</div>
-		<div class="row align-middle" id="menu-buttons" >
-			<div class="small-12 large-6 column text-center show-for-medium">
+		<div class="row align-middle" id="menu-buttons" data-animate="slide-in-down slide-out-up">
+			<div class="small-12 large-6 columns text-center show-for-medium">
 				<h1>Matthew A. Hawkins</h1>
 			</div>
-			<div class="small-12 large-6 column" data-dropdown-menu>
+			<div class="small-12 large-6 columns" data-dropdown-menu>
 				<div class="stacked-for-small button-group">
 					<a class="button" href="docs/Hawkins_Resume_12_28_16.pdf" target="_blank">Resume</a>
 					<a class="button" href="docs/Hawkins_Transcript_12_28_16.pdf" target="_blank">Transcript</a>
@@ -39,28 +39,20 @@
 
 		<!--Landing Banner Section-->
 		<!--<div class="row">
-			<div class="small-12 column">
+			<div class="small-12 columns">
 				<img src="img/bannerCrop.png">
 			</div>
 		</div>-->
 
 		<!--About Me Section-->
-		<div class="row align-center">
-			<div class="small-12 medium-8 large-8 column">
+		<div class="row align-center align-middle">
+			<div class="small-8 columns">
 				<div class="text-center">
 					<h4>About Me</h4>
 				</div>
-				<p>
-					I am a fourth year student at Bucknell University pursuing a degree in Computer Engineering. 
-					I like to work close to the hardware side and have dabbled with firmware as a result. 
-					Therefore, I am interested in pursuing a career in the field of embedded systems engineering. 
-					My work experience with Arduino has resulted in related hobby projects and Raspberry Pi interfacing.
-					Additionally, the various forms of human-computer interaction fascinate me. 
-					I would love to help contribute to advances in this sector, 
-					and hopefully revolutionize the way people connect with their devices. 
-				</p>
+				<p>I am a fourth year student at Bucknell University pursuing a degree in Computer Engineering. I like to work close to the hardware side and have dabbled with firmware as a result. Therefore, I am interested in pursuing a career in the field of embedded systems engineering. My work experience with Arduino has resulted in related hobby projects and Raspberry Pi interfacing. Additionally, the various forms of human-computer interaction fascinate me. I would love to help contribute to advances in this sector, and hopefully revolutionize the way people connect with their devices.</p>
 			</div>
-			<div class="small-12 medium-4 large-4 column">
+			<div class="small-4 columns">
 				<img class="thumbnail" src="img/mug.png" alt="Portrait">
 			</div>
 		</div>
@@ -70,9 +62,9 @@
 		<div class="row align-center">
 			<h4>Portfolio</h4>
 		</div>
-		<div class="row">
-			<div class="small-5 medium-3 columns">
-				<ul class="vertical tabs text-center" data-active-collapse="true" data-tabs id="collapsing-tabs">
+		<div class="row collapse">
+			<div class="small-4 medium-2 columns">
+				<ul class="vertical tabs text-center" data-tabs id="collapsing-tabs">
 					<li class="tabs-title is-active"><a href="#sikorsky" aria-selected="true">
 						<i class="show-for-medium material-icons md-48">airplanemode_active</i>
 						<i class="hide-for-medium material-icons md-32">airplanemode_active</i>
@@ -86,7 +78,7 @@
 					<li class="tabs-title"><a href="#micromanipulator">
 						<i class="show-for-medium material-icons md-48">computer</i>
 						<i class="hide-for-medium material-icons md-32">computer</i>
-						<p>Accessible Micromanipulator</p></a>
+						<p>Accessible Micro-manipulator</p></a>
 					</li>
 					<li class="tabs-title"><a href="#events">
 						<i class="show-for-medium material-icons md-48">event</i>
@@ -105,10 +97,10 @@
 					</li>
 				</ul>
 			</div>
-			<div class="small-7 medium-9 columns">
+			<div class="small-8 medium-10 columns">
 				<div class="tabs-content" data-tabs-content="collapsing-tabs">
 					<div class="tabs-panel is-active" id="sikorsky">
-						<p>At Sikorsky Aircraft, a Lockheed Martin company, I was tasked with updating the database used in their estimating department. This involved decomposing a collection of Excel sheets into a relational model. I then built an Access based solution from this model. In order to future proof the system, I automated the system of polling an off-site database for up to date resources. To improve the system's ease of use, I added a frontend to the program. This GUI also provided functionality which could automate various tasks which are common in the estimating process. </p>
+						<p>At Sikorsky Aircraft, a Lockheed Martin company, I was tasked with updating the database used in their estimating department. This involved decomposing a collection of Excel sheets into a relational model. I then built an Access based solution from this model. In order to future proof the system, I automated the system of polling an off-site database for up to date resources. To improve the system's ease of use, I added a frontend to the program. This GUI also provided functionality which could automate various tasks which are common in the estimating process.</p>
 					</div>
 					<div class="tabs-panel" id="hydrosense">
 						<p><a href="https://www.eg.bucknell.edu/~amm042/hydrosense/"> Hydrosense</a> provides a communication protocol and back-end server infrastructure to enable any Arduino or Raspberry Pi to easily collect and publish hydroclimatic data. This data can then be queried, compared, and downloaded by researchers and hobbyists alike. See what's new on our <a href="https://github.com/HydroSense">Github</a> repo!</p>
@@ -132,16 +124,16 @@
 		<!--Contact Me Section-->
 		<hr/>
 		<div class="row">
-			<div class="small-12 column text-center" id="contact">
+			<div class="small-12 columns text-center" id="contact">
 				<h4>Contact Me</h4>
 				<div class="row">
-					<div class="small-4 column">
+					<div class="small-4 columns">
 						<a href="mailto:matthew.alexander.hawkins@gmail.com">Email</a>
 					</div>
-					<div class="small-4 column">
+					<div class="small-4 columns">
 						<a href="https://www.linkedin.com/pub/matthew-hawkins/a5/682/b03" target="_blank">LinkedIn</a>
 					</div>
-					<div class="small-4 column">
+					<div class="small-4 columns">
 						<a href="https://bucknell-csm.symplicity.com/profiles/matthew.hawkins" target="_blank">Bucknell Bridge</a>
 					</div>
 				</div>
@@ -151,7 +143,7 @@
 		<!--Footer-->
 		<hr/>
 		<footer class="row">
-			<div class="large-12 column">
+			<div class="large-12 columns">
 				<p>Last Updated: June 1, 2017</p>
 			</div>
 		</footer>
